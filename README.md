@@ -1,7 +1,8 @@
-The contract address: 0x53Ecc62C4Cb327014E1f2007A68B74B3f50B6df3
-Transaction ID: 0x5b07c09dfa934c86ffcec256bc44fd06ab5b560b2e7afe2ddd05b76af6a5408f
+<br>The contract address:</br> 0x53Ecc62C4Cb327014E1f2007A68B74B3f50B6df3 <br>
+<br>Transaction ID:</br> 0x5b07c09dfa934c86ffcec256bc44fd06ab5b560b2e7afe2ddd05b76af6a5408f
 
-<b>Libraries Used:<b/>
+<b>Libraries Used:</b>
+
 Truffle:
 It is the development environment which uses EVM used to create Dapps much easier. It comes with a boiler plate code so that we can make the developement much more easier.
 
