@@ -1,5 +1,5 @@
-<br>The contract address:</br> 0x53Ecc62C4Cb327014E1f2007A68B74B3f50B6df3 <br>
-<br>Transaction ID:</br> 0x5b07c09dfa934c86ffcec256bc44fd06ab5b560b2e7afe2ddd05b76af6a5408f
+<b>The contract address:</b> 0x53Ecc62C4Cb327014E1f2007A68B74B3f50B6df3 <br>
+<b>Transaction ID:</b> 0x5b07c09dfa934c86ffcec256bc44fd06ab5b560b2e7afe2ddd05b76af6a5408f
 
 <b>Libraries Used:</b>
 
@@ -17,6 +17,8 @@ Node: 12.18.4
 Truffle: v4.1.14
 web3: v0.20.6
 truffle-hdwallet-provider: v1.0.17
+
+<b>Procedure to run</b>
 
 Change directory to ```ud-supply-chain``` folder and install all requisite npm packages (as listed in ```package.json```):
 
