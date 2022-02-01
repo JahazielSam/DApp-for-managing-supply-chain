@@ -1,10 +1,11 @@
 pragma solidity ^0.4.24;
 
+import "../coffeecore/Ownable.sol";
 // Import the library 'Roles'
 import "./Roles.sol";
 
 // Define a contract 'DistributorRole' to manage this role - add, remove, check
-contract DistributorRole{
+contract DistributorRole is Ownable{
   using Roles for Roles.Role;
   // Define 2 events, one for Adding, and other for Removing
   event DistributorAdd(address indexed account);

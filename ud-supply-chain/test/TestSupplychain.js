@@ -89,6 +89,7 @@ contract('SupplyChain', function(accounts) {
         })
 
         // Mark an item as Processed by calling function processtItem()
+        await supplyChain.addFarmer(originFarmerID)
         await supplyChain.processItem(upc, { from: originFarmerID })
 
         // Retrieve the just now saved item from blockchain by calling function fetchItem()
@@ -182,6 +183,7 @@ contract('SupplyChain', function(accounts) {
         })
 
         // Mark an item as Sold by calling function buyItem()
+        await supplyChain.addDistributor(distributorID)
         await supplyChain.buyItem(upc, { from: distributorID, value: productPrice })
 
         // Retrieve the just now saved item from blockchain by calling function fetchItem()
@@ -245,6 +247,7 @@ contract('SupplyChain', function(accounts) {
         })
 
         // Mark an item as Received by calling function receiveItem()
+        await supplyChain.addRetailer(retailerID)
         await supplyChain.receiveItem(upc, { from: retailerID })
 
         // Retrieve the just now saved item from blockchain by calling function fetchItem()
@@ -276,6 +279,7 @@ contract('SupplyChain', function(accounts) {
         })
 
         // Mark an item as Purchased by calling function purchaseItem()
+        await supplyChain.addConsumer(consumerID)
         await supplyChain.purchaseItem(upc, { from: consumerID })
 
         // Retrieve the just now saved item from blockchain by calling function fetchItem()

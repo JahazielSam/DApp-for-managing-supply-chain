@@ -1,7 +1,59 @@
-The contract address: 0x5884833da0db153c9df4fd031d82a9afcab534cd <br>
-Transaction ID: 0xef8e754cd8ac307f9d704561c50d01f7d402d9fdcbdc5faebfc0525445130b5d
+The contract address: 0x53Ecc62C4Cb327014E1f2007A68B74B3f50B6df3
+Transaction ID: 0x5b07c09dfa934c86ffcec256bc44fd06ab5b560b2e7afe2ddd05b76af6a5408f
 
-Solidity: v0.4.24 <br>
-Node: 12.18.4 <br>
-Truffle: v4.1.14 <br>
+<b>Libraries Used:<b/>
+Truffle:
+It is the development environment which uses EVM used to create Dapps much easier. It comes with a boiler plate code so that we can make the developement much more easier.
+
+Web3:
+It gives us a collection of libraries that allow us to interact with any local or remote ethereum node.
+
+truffle-hdwallet-provider:
+The Truffle HDWallet provider is used to easily configure connections to ethereum. Here we use it to connect with the Rinkeby Public Network.
+
+Solidity: v0.4.24
+Node: 12.18.4
+Truffle: v4.1.14
 web3: v0.20.6
+truffle-hdwallet-provider: v1.0.17
+
+Change directory to ```ud-supply-chain``` folder and install all requisite npm packages (as listed in ```package.json```):
+
+```
+cd ud-supply-chain
+npm install
+```
+
+Launch Ganache:
+
+```
+ganache-cli -m "<<mnemonic>>"
+```
+
+In a separate terminal window, Compile smart contracts:
+
+```
+truffle compile
+```
+
+This will create the smart contract artifacts in folder ```build\contracts```.
+
+Migrate smart contracts to the locally running blockchain, ganache-cli:
+
+```
+truffle migrate
+```
+
+Test smart contracts:
+
+```
+truffle test
+```
+
+All 10 tests should pass.
+
+In a separate terminal window, launch the DApp:
+
+```
+npm run dev
+```
